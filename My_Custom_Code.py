@@ -16,8 +16,15 @@ def my_custom_autonomous(hat):
     # first dispenser
     while nr_balls < 10:
         print(nr_balls)
-        auto.forward(0.2, 0.5)
-        auto.backward(0.2, 0.5)
+        #auto.forward(0.2, 0.5)
+        auto.right(0.2, 0.5)
+        auto.forward(0.2,0.5)
+        auto.turn_left(0.2,0.5)
+        auto.forward(0.2,0.5)
+        auto.turn_left(0.2,0.5)
+        auto.forward(0.2,0.5)
+        auto.turn_right(0.2,0.5)
+
         nr_balls = nr_balls + 1
 
     # auto.turn_left(1,2)     
@@ -67,13 +74,13 @@ def my_custom_teleop():
         if leftstick > .05 or leftstick < -.05:
             hat.motor(0, leftstick)
         else:
-            hat.motor(0, .05)   
+            hat.motor(0, .0)   
             
 
         if rightstick > .05 or rightstick < -.05:
             hat.motor(1, -rightstick)
         else:
-            hat.motor(1, .05)
+            hat.motor(1, .0)
 
         # # sleep for smooth loops
         sleep(.02)
