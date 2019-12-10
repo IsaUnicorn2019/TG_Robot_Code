@@ -1,7 +1,5 @@
 
 
-
-
 from app.Robot import Controller, Py_Hat, Check_Input
 from app.Autonomous import Autonomous
 
@@ -14,16 +12,26 @@ def my_custom_autonomous(hat):
 
     #Takes a value and time
 
-    
-    #auto.forward(.8, 2)
-    auto.turn_left(.8,2)
+    nr_balls = 0
+    # first dispenser
+    while nr_balls < 10:
+        print(nr_balls)
+        auto.forward(0.2, 0.5)
+        auto.backward(0.2, 0.5)
+        nr_balls = nr_balls + 1
 
-    auto.forward(.8,2)
-    
-    auto.turn_left(1,2)
-    auto.forward(1, 3)
-    auto.turn_right(1,5)
-    auto.forward(.8, 2)
+    # auto.turn_left(1,2)     
+    # auto.forward(.8, 2)
+    # auto.turn_right(1,2)
+ 
+    # nr_balls = 0
+
+   
+    # while nr_balls < 10:
+    #     auto.forward(0.2, 0.5)
+    #     auto.back(0.2, 0.5)
+    #     nr_balls = nr_balls - 1
+
     auto.stop()
 
 
@@ -35,9 +43,8 @@ def my_custom_teleop():
     hat = Py_Hat(address=96)
     
     while True:
-        
         controller.event_get()
-
+        # setup controls
         leftstick = controller.set_axis('leftstick')
         rightstick = controller.set_axis('rightstick')
         LT = controller.set_axis('LT')
@@ -60,19 +67,17 @@ def my_custom_teleop():
         if leftstick > .05 or leftstick < -.05:
             hat.motor(0, leftstick)
         else:
-            hat.motor(0, .02)   
+            hat.motor(0, .05)   
             
 
         if rightstick > .05 or rightstick < -.05:
             hat.motor(1, -rightstick)
         else:
-            hat.motor(1, .02)
+            hat.motor(1, .05)
 
         # # sleep for smooth loops
-        sleep(.02) 
-
-
-
+        sleep(.02)
+        
 
 
 if __name__ == "__main__":
@@ -80,6 +85,11 @@ if __name__ == "__main__":
     os.system("sudo pkill -9 -f RobotCode.py")
     
     my_custom_teleop()
+
+
+
+
+
 
 
 
