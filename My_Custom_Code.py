@@ -14,13 +14,13 @@ def my_custom_autonomous(hat):
 
    print(nr_balls)
         #auto.forward(0.2, 0.5)
-        auto.turn_right(1, 2)
+        auto.turn_right(1, 5)
         auto.forward(0.8,2)
-        auto.turn_left(1,2)
+        auto.turn_left(1,5)
         auto.forward(0.8,2)
-        auto.turn_left(1,2)
+        auto.turn_left(1,5)
         auto.forward(0.8,2)
-        auto.turn_right(1,2)
+        auto.turn_right(1,5)
     nr_balls = 0
     # first dispenser
    # while nr_balls < 10:
