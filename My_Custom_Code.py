@@ -10,10 +10,10 @@ import os
 def my_custom_autonomous(hat):
     auto = Autonomous(hat)
 
-    #Takes a value and time
+    # Takes a value and time
 
     
-    #auto.forward(0.2, 0.5)
+    auto.forward(0.2, 0.5)
     auto.turn_right(0.8,1)
     auto.forward(0.8,2)
     auto.turn_left(0.8,1)
@@ -39,8 +39,6 @@ def my_custom_autonomous(hat):
     # auto.turn_right(1,2)
  
     # nr_balls = 0
-
-    auto.stop()
 
    
     # while nr_balls < 10:
