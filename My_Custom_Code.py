@@ -12,20 +12,24 @@ def my_custom_autonomous(hat):
 
     #Takes a value and time
 
+   print(nr_balls)
+        #auto.forward(0.2, 0.5)
+        auto.turn_right(1, 2)
+        auto.forward(0.8,2)
+        auto.turn_left(1,2)
+        auto.forward(0.8,2)
+        auto.turn_left(1,2)
+        auto.forward(0.8,2)
+        auto.turn_right(1,2)
     nr_balls = 0
     # first dispenser
-    while nr_balls < 10:
-        print(nr_balls)
-        #auto.forward(0.2, 0.5)
-        auto.right(0.2, 0.5)
-        auto.forward(0.2,0.5)
-        auto.turn_left(0.2,0.5)
-        auto.forward(0.2,0.5)
-        auto.turn_left(0.2,0.5)
-        auto.forward(0.2,0.5)
-        auto.turn_right(0.2,0.5)
+   # while nr_balls < 10:
+       # print(nr_balls)
+       # auto.forward(0.2, 0.5)
+        #auto.backward(0.2,0.5)
 
-        nr_balls = nr_balls + 1
+
+       # nr_balls = nr_balls + 1
 
     # auto.turn_left(1,2)     
     # auto.forward(.8, 2)
@@ -58,6 +62,7 @@ def my_custom_teleop():
         RT = controller.set_axis('RT')
 
         # Button press to run Autonomous
+        
         if LT > .75:
             my_custom_autonomous(hat) 
         if RT > .9:
@@ -74,13 +79,13 @@ def my_custom_teleop():
         if leftstick > .05 or leftstick < -.05:
             hat.motor(0, leftstick)
         else:
-            hat.motor(0, .0)   
+            hat.motor(0, .05)   
             
 
         if rightstick > .05 or rightstick < -.05:
             hat.motor(1, -rightstick)
         else:
-            hat.motor(1, .0)
+            hat.motor(1, .05)
 
         # # sleep for smooth loops
         sleep(.02)
