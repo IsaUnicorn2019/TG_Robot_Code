@@ -19,7 +19,7 @@ def my_custom_autonomous(hat):
     auto.turn_left(0.7,.85, invert=True)
     auto.forward(0.8,5.5)
     auto.turn_left(0.7,0.85, invert=True)
-    auto.forward(0.8,1.2)
+    auto.forward(0.8,1.5)
     #auto.turn_right(0.8,1)
     #auto.forward(0.8,1)
 
@@ -46,14 +46,8 @@ def my_custom_autonomous(hat):
 
     
     auto.stop()
-<<<<<<< HEAD
 
-#########  DO NOT PASS THIS LINE####
-=======
-    
-############## DO NOT GO BELOW THIS LINE ########
 
->>>>>>> deea298af7f0d888bbf106b48cc307dffb2617ef
 def my_custom_teleop():
     #controller class
     controller = Controller()
@@ -103,6 +97,7 @@ if __name__ == "__main__":
     import os
     os.system("sudo pkill -9 -f RobotCode.py")
     my_custom_teleop()
+
 
 
 
