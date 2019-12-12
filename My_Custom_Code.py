@@ -13,15 +13,15 @@ def my_custom_autonomous(hat):
     # Takes a value and time
 
     
-    auto.forward(0.2, 0.5)
-    auto.turn_right(0.8,1)
-    auto.forward(0.8,2)
-    auto.turn_left(0.8,1)
-    auto.forward(0.8,2)
-    auto.turn_left(0.8,1)
+    #auto.forward(0.2, 0.5)
+    auto.turn_right(0.7, .8, invert=True)
     auto.forward(0.8,1)
-    auto.turn_right(0.8,1)
-    auto.forward(0.8,1)
+    auto.turn_left(0.7,.85, invert=True)
+    auto.forward(0.8,5.5)
+    auto.turn_left(0.7,0.85, invert=True)
+    auto.forward(0.8,1.2)
+    #auto.turn_right(0.8,1)
+    #auto.forward(0.8,1)
 
 
     # nr_balls = 0
@@ -48,7 +48,7 @@ def my_custom_autonomous(hat):
 
     auto.stop()
 
-
+#########  DO NOT PASS THIS LINE####
 def my_custom_teleop():
     #controller class
     controller = Controller()
