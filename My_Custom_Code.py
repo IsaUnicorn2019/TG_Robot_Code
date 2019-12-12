@@ -30,25 +30,30 @@ def my_custom_autonomous(hat):
     #     print(nr_balls)
     #     auto.forward(0.2, 0.5)
     #     auto.backward(0.2,0.5)
+    #     nr_balls = nr_balls + 1
 
-
-    # nr_balls = nr_balls + 1
-
-    # auto.turn_left(1,2)     
-    # auto.forward(.8, 2)
-    # auto.turn_right(1,2)
+    
+    # auto.turn_left(0.5,1)     
+    # auto.forward(0.8,2)
+    # auto.turn_right(0.5,1)
  
-    # nr_balls = 0
 
-   
+    # nr_balls = 0
     # while nr_balls < 10:
     #     auto.forward(0.2, 0.5)
-    #     auto.back(0.2, 0.5)
-    #     nr_balls = nr_balls - 1
+    #     auto.backward(0.2, 0.5)
+    #     nr_balls = nr_balls + 1
 
+    
     auto.stop()
+<<<<<<< HEAD
 
 #########  DO NOT PASS THIS LINE####
+=======
+    
+############## DO NOT GO BELOW THIS LINE ########
+
+>>>>>>> deea298af7f0d888bbf106b48cc307dffb2617ef
 def my_custom_teleop():
     #controller class
     controller = Controller()
