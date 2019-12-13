@@ -17,16 +17,17 @@ def my_custom_autonomous(hat):
     #auto.forward(0.2, 0.5)
     auto.turn_right(0.7, .8, invert=True)
     auto.forward(0.8,1)
-    auto.turn_left(0.7,.85, invert=True)
+    auto.turn_left(0.7,.95, invert=True)
     auto.forward(0.8,5.5)
-    auto.turn_left(0.7,0.85, invert=True)
-    auto.forward(0.8,2.8)
-    auto.turn_right(0.7, .8,    invert=True)
+    auto.turn_left(0.7,0.95, invert=True)
+    auto.forward(0.8,0.1)
+    auto.turn_right(0.7, .1, invert=True)
     #auto.forward(0.8,1)
 
 
     # nr_balls = 0
     # #first dispenser
+    #     nr_balls = nr_balls + 1
     # while nr_balls < 10:
     #     print(nr_balls)
     #     auto.forward(0.2, 0.5)
