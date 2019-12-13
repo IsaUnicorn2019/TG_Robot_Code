@@ -12,38 +12,38 @@ def my_custom_autonomous(hat):
     auto = Autonomous(hat)
 
     # Takes a value and time
-
     
     #auto.forward(0.2, 0.5)
-    auto.turn_right(0.7, .8, invert=True)
-    auto.forward(0.8,1)
-    auto.turn_left(0.7,.95, invert=True)
+    auto.turn_right(0.7,0.8, invert=True)
+    auto.forward(0.8,1.2)
+    auto.turn_left(0.7,0.95, invert=True)
     auto.forward(0.8,5.5)
     auto.turn_left(0.7,0.95, invert=True)
-    auto.forward(0.8,0.1)
-    auto.turn_right(0.7, .1, invert=True)
+    auto.forward(0.8,0.9)
+    auto.turn_right(0.7,0.95, invert=True)
     #auto.forward(0.8,1)
 
 
-    # nr_balls = 0
+    nr_balls = 1
     # #first dispenser
-    #     nr_balls = nr_balls + 1
-    # while nr_balls < 10:
-    #     print(nr_balls)
-    #     auto.forward(0.2, 0.5)
-    #     auto.backward(0.2,0.5)
-    #     nr_balls = nr_balls + 1
+    # 
+    while nr_balls < 3:
+         print(nr_balls)
+         auto.forward(0.8, 0.35)
+         auto.backward(0.8,0.35)
+         nr_balls = nr_balls + 1
 
     
-    # auto.turn_left(0.5,1)     
-    # auto.forward(0.8,2)
-    # auto.turn_right(0.5,1)
+    #auto.turn_left(0.7,0.95, invert=True)     
+    #auto.forward(0.8,0.6)
+    #auto.turn_right(0.7,0.95, invert=True)
  
 
-    # nr_balls = 0
-    # while nr_balls < 10:
-    #     auto.forward(0.2, 0.5)
-    #     auto.backward(0.2, 0.5)
+    nr_balls = 1
+    # segond dispenser
+    # while nr_balls < 3:
+    #     auto.forward(0.8, 0.35)
+    #     auto.backward(0.8,0.35)
     #     nr_balls = nr_balls + 1
 
     
