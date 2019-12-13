@@ -26,7 +26,7 @@ def my_custom_autonomous(hat):
 
     nr_balls = 1
     # #first dispenser
-    # 
+    print(nr_balls)
     while nr_balls < 3:
          print(nr_balls)
          auto.forward(0.8, 0.35)
