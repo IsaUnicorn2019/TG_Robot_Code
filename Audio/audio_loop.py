@@ -5,6 +5,7 @@ import socket
 import os
 from time import sleep
 sleep(3)
+
 path = os.path.dirname(os.path.abspath(__file__))
 os.chdir('/home/mendel/TG_Robot_Code/Audio')
 

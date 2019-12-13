@@ -147,13 +147,14 @@ for i in infinite_sequence():
             deadzone = controller.control_loop(.01, hat)
         
         
-     
         if Start == A == Home == 1:
+            
             if change == False:
                 
                 custom_code = controller.read_and_write(deadzone, change=True)
                 change = True
-        print(custom_code)
+        
+        print(change)
         if Back == 1:
             a.audio('main loop')
         

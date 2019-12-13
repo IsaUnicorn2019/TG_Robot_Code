@@ -21,7 +21,7 @@ def my_custom_autonomous(hat):
     auto.forward(0.8,5.5)
     auto.turn_left(0.7,0.85, invert=True)
     auto.forward(0.8,2.8)
-    #auto.turn_right(0.8,1)
+    auto.turn_right(0.7, .8,    invert=True)
     #auto.forward(0.8,1)
 
 
