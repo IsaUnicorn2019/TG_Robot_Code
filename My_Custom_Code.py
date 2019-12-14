@@ -22,7 +22,7 @@ def my_custom_autonomous(hat):
     auto.forward(0.8,5.5)
     auto.turn_left(0.7,0.95, invert=True)
     print("tercera vuelta")
-    auto.forward(0.8,1.3)
+    auto.forward(0.8,1.45)
     auto.turn_right(0.7,1.0, invert=True)
     print("Ultima vuelta")
     #auto.forward(0.8,1)
@@ -33,21 +33,21 @@ def my_custom_autonomous(hat):
     print(nr_balls)
     while nr_balls < 3:
          print(nr_balls)
-         auto.forward(0.8, 1.4)
-         auto.backward(0.8, 1.4)
+         auto.forward(0.8, 1.45)
+         auto.backward(0.8, 1.45)
          nr_balls = nr_balls + 1
 
     
     #auto.turn_left(0.7,0.95, invert=True)     
-    #auto.forward(0.8,0.6)
+    #auto.forward(0.8,0.8)
     #auto.turn_right(0.7,0.95, invert=True)
  
 
     nr_balls = 1
     # segond dispenser
     # while nr_balls < 3:
-    #     auto.forward(0.8, 0.35)
-    #     auto.backward(0.8,0.35)
+    #     auto.forward(0.8, 1.45)
+    #     auto.backward(0.8,1.45)
     #     nr_balls = nr_balls + 1
 
     
